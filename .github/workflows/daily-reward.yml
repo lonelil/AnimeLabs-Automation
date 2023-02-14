@@ -25,7 +25,12 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'yarn'
-    - run: yarn install
-    - run: yarn build
-    - run: node dist/daily.js
+        
+    - name: Setup
+      run: |
+        yarn install
+        yarn build
+        
+    - name: Run Bot
+      run: node dist/daily.js
     
