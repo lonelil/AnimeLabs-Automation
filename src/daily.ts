@@ -1,7 +1,5 @@
 import * as dotenv from "dotenv";
-if (!process.env.ci) {
-  dotenv.config();
-}
+dotenv.config();
 import { Client, Language } from "genshin-kit.js";
 import { Webhook, MessageBuilder } from "discord-webhook-node";
 const accounts = JSON.parse(process.env.HOYO_COOKIES as string);
