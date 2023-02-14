@@ -3,7 +3,7 @@ dotenv.config();
 import { Client, Language } from "genshin-kit.js";
 import { Webhook, MessageBuilder } from "discord-webhook-node";
 const accounts = JSON.parse(process.env.HOYO_COOKIES as string);
-console.log(`Found ${accounts.length} accounts!`);
+console.log(`Found ${accounts.length} account(s)!`);
 
 accounts.forEach(
   async (account: { ltuid: string; ltoken: string }, i: number) => {
