@@ -3,7 +3,7 @@
 ## Daily Reward Check In
 Fork https://github.com/lonelil/AnimeLabs-Automation
 
-Goto hoyolab and run 
+Goto the certain anime game’s social platform and run 
 ```js
 let cookies = Object.fromEntries(document.cookie.split('; ').map(v=>v.split(/=(.*)/s).map(decodeURIComponent)))
 alert(`Please copy the value below and follow the guide.\n\n{ "ltuid": "${cookies.ltuid}", "ltoken": "${cookies.ltoken}" }`)
