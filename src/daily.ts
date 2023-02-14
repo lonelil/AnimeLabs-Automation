@@ -31,7 +31,7 @@ accounts.forEach(
             )
             .setThumbnail(getDaily.rewards?.icon as string)
             .setDescription(
-              `Successfully redeemed at <t:${Math.round(Date.now() / 1000)}:R>!`
+              `Successfully redeemed <t:${Math.round(Date.now() / 1000)}:R>!`
             )
             .setFooter("AnimeLabs-Automation by lonelil")
             .setTimestamp();
