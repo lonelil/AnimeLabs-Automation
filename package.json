@@ -1,0 +1,19 @@
+{
+  "name": "animelabs-automation",
+  "version": "1.0.0",
+  "repository": "https://github.com/lonelil/AnimeLabs-Automation.git",
+  "author": "lonelil <51315646+lonelil@users.noreply.github.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc --build"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "genshin-kit.js": "^2.2.3"
+  },
+  "devDependencies": {
+    "@types/node": "^18.13.0",
+    "@types/set-cookie-parser": "^2.4.2",
+    "typescript": "^4.9.5"
+  }
+}
