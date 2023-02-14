@@ -7,8 +7,8 @@ on:
   workflow_dispatch:
   
 env:
-  HOYO_COOKIES: true
-  DISCORD_WEBHOOK: true
+  HOYO_COOKIES: ${{ secrets.HOYO_COOKIES }}
+  DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
 
 jobs:
   checkIn:
